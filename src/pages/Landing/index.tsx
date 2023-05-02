@@ -230,6 +230,7 @@ const CardGrid = styled.div<{ cols: number }>`
   width: 100%;
   padding: 24px 0 0;
   max-width: 1440px;
+  margin-bottom: 20px;
   scroll-margin: ${({ theme }) => `${theme.navHeight}px 0 0`};
 
   grid-template-columns: 1fr;
@@ -399,7 +400,7 @@ export default function Landing() {
                 <Card {...card} icon={isDarkMode ? darkIcon : lightIcon} key={card.title} type={CardType.Secondary} />
               ))}
             </CardGrid>
-            <ProtocolBanner />
+            {/* <ProtocolBanner /> */}
             <AboutFooter />
           </AboutContentContainer>
         </PageContainer>

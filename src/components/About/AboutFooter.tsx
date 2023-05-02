@@ -5,8 +5,8 @@ import { BREAKPOINTS, ExternalLink, StyledRouterLink } from 'theme'
 import { useIsDarkMode } from 'theme/components/ThemeToggle'
 
 import { DiscordIcon, GithubIcon, TwitterIcon } from './Icons'
-import darkUnicornImgSrc from './images/unicornEmbossDark.png'
-import lightUnicornImgSrc from './images/unicornEmbossLight.png'
+import darkUnicornImgSrc from '../../assets/192x192_App_Icon.png'
+import lightUnicornImgSrc from '../../assets/192x192_App_Icon.png'
 
 const Footer = styled.div`
   display: flex;
@@ -114,7 +114,7 @@ const LogoSectionContent = () => {
   return (
     <>
       <StyledLogo src={isDarkMode ? darkUnicornImgSrc : lightUnicornImgSrc} alt="Uniswap Logo" />
-      <SocialLinks>
+      {/* <SocialLinks>
         <SocialLink href="https://discord.gg/FCfyBSbCU5" target="_blank" rel="noopener noreferrer">
           <DiscordIcon size={32} />
         </SocialLink>
@@ -130,8 +130,8 @@ const LogoSectionContent = () => {
         <SocialLink href="https://github.com/Uniswap" target="_blank" rel="noopener noreferrer">
           <GithubIcon size={32} />
         </SocialLink>
-      </SocialLinks>
-      <Copyright>© {new Date().getFullYear()} Uniswap Labs</Copyright>
+      </SocialLinks> */}
+      <Copyright>© {new Date().getFullYear()} Omelette Swap</Copyright>
     </>
   )
 }
@@ -151,7 +151,7 @@ export const AboutFooter = () => {
           <TextLink to="/nfts">NFTs</TextLink>
           <TextLink to="/pools">Pools</TextLink>
         </LinkGroup>
-        <LinkGroup>
+        {/* <LinkGroup>
           <LinkGroupTitle>Protocol</LinkGroupTitle>
           <ExternalTextLink href="https://uniswap.org/community">Community</ExternalTextLink>
           <ExternalTextLink href="https://uniswap.org/governance">Governance</ExternalTextLink>
@@ -196,7 +196,7 @@ export const AboutFooter = () => {
           >
             <ExternalTextLink href="https://support.uniswap.org/hc/en-us">Help Center</ExternalTextLink>
           </TraceEvent>
-        </LinkGroup>
+        </LinkGroup> */}
       </FooterLinks>
 
       <LogoSectionBottom>
