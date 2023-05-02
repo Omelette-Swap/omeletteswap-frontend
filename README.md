@@ -1,4 +1,4 @@
-# Omeletteswap Labs Interface
+# Omeletteswap Front End
 
 ## How to run
 - `yarn install`
