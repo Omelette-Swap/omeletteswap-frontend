@@ -150,7 +150,7 @@ export const MenuDropdown = () => {
                     </PrimaryMenuRow.Text>
                   </PrimaryMenuRow>
                 </Box>
-                <Box onClick={() => openDownloadApp(InterfaceElementName.UNISWAP_WALLET_MODAL_DOWNLOAD_BUTTON)}>
+                {/* <Box onClick={() => openDownloadApp(InterfaceElementName.UNISWAP_WALLET_MODAL_DOWNLOAD_BUTTON)}>
                   <PrimaryMenuRow close={toggleOpen}>
                     <Icon>
                       <AppleLogo width="24px" height="24px" fill={theme.textPrimary} />
@@ -159,7 +159,7 @@ export const MenuDropdown = () => {
                       <Trans>Download Uniswap Wallet</Trans>
                     </PrimaryMenuRow.Text>
                   </PrimaryMenuRow>
-                </Box>
+                </Box> */}
                 <PrimaryMenuRow to="/vote" close={toggleOpen}>
                   <Icon>
                     <GovernanceIcon width={24} height={24} color={theme.textPrimary} />
@@ -168,14 +168,14 @@ export const MenuDropdown = () => {
                     <Trans>Vote in governance</Trans>
                   </PrimaryMenuRow.Text>
                 </PrimaryMenuRow>
-                <PrimaryMenuRow href="https://info.uniswap.org/#/">
+                {/* <PrimaryMenuRow href="https://info.uniswap.org/#/">
                   <Icon>
                     <BarChartIcon width={24} height={24} color={theme.textPrimary} />
                   </Icon>
                   <PrimaryMenuRow.Text>
                     <Trans>View more analytics</Trans>
                   </PrimaryMenuRow.Text>
-                </PrimaryMenuRow>
+                </PrimaryMenuRow> */}
               </Column>
               <Separator />
               <Box
@@ -208,7 +208,7 @@ export const MenuDropdown = () => {
                   </SecondaryLinkedText>
                 )}
               </Box>
-              <IconRow>
+              {/* <IconRow>
                 <Icon href="https://discord.com/invite/FCfyBSbCU5">
                   <DiscordIconMenu
                     className={styles.hover}
@@ -233,7 +233,7 @@ export const MenuDropdown = () => {
                     color={themeVars.colors.textSecondary}
                   />
                 </Icon>
-              </IconRow>
+              </IconRow> */}
             </Column>
           </NavDropdown>
         )}

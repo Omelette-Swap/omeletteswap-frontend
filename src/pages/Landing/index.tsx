@@ -351,7 +351,7 @@ export default function Landing() {
               {shouldDisableNFTRoutes ? (
                 <Trans>Trade crypto with confidence</Trans>
               ) : (
-                <Trans>Trade crypto and NFTs with confidence</Trans>
+                <Trans>Trade crypto with confidence</Trans>
               )}
             </TitleText>
             <SubTextContainer>
@@ -359,7 +359,7 @@ export default function Landing() {
                 {shouldDisableNFTRoutes ? (
                   <Trans>Buy, sell, and explore tokens</Trans>
                 ) : (
-                  <Trans>Buy, sell, and explore tokens and NFTs</Trans>
+                  <Trans>Buy, sell, and explore tokens</Trans>
                 )}
               </SubText>
             </SubTextContainer>
@@ -395,11 +395,11 @@ export default function Landing() {
                 />
               ))}
             </CardGrid>
-            <CardGrid cols={3}>
+            {/* <CardGrid cols={3}>
               {MORE_CARDS.map(({ darkIcon, lightIcon, ...card }) => (
                 <Card {...card} icon={isDarkMode ? darkIcon : lightIcon} key={card.title} type={CardType.Secondary} />
               ))}
-            </CardGrid>
+            </CardGrid> */}
             {/* <ProtocolBanner /> */}
             <AboutFooter />
           </AboutContentContainer>

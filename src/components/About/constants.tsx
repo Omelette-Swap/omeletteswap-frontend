@@ -22,9 +22,9 @@ export const MAIN_CARDS = [
   },
   {
     to: '/nfts',
-    title: 'Trade NFTs',
-    description: 'Buy and sell NFTs across marketplaces to find more listings at better prices.',
-    cta: 'Explore NFTs',
+    title: 'Earn',
+    description: 'Earn tokens across marketplaces to find more listings at better prices.',
+    cta: 'Earn Tokens',
     darkBackgroundImgSrc: nftCardImgSrc,
     lightBackgroundImgSrc: nftCardImgSrc,
     elementName: InterfaceElementName.ABOUT_PAGE_NFTS_CARD,

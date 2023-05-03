@@ -7,6 +7,7 @@ import styled from 'styled-components/macro'
 import { ExternalLink, HideSmall } from 'theme'
 import { colors } from 'theme/colors'
 import { useDarkModeManager } from 'theme/components/ThemeToggle'
+import OmChainLogo from '../../assets/f85f275c79a9520d5752ed70cd7f64c70bb148bf.png'
 
 import { AutoRow } from '../Row'
 
@@ -26,6 +27,7 @@ const BodyText = styled.div`
 `
 const RootWrapper = styled.div`
   margin-top: 16px;
+  background-color: linear-gradient(360deg,#d8e3ff,#dce6ff 0,#fbfcff 51.48%,#f6f9ff);
 `
 
 const SHOULD_SHOW_ALERT = {
@@ -88,7 +90,7 @@ const BG_COLORS_BY_DARK_MODE_AND_CHAIN_ID: {
 }
 
 const ContentWrapper = styled.div<{ chainId: NetworkAlertChains; darkMode: boolean; logoUrl: string }>`
-  background: ${({ chainId, darkMode }) => BG_COLORS_BY_DARK_MODE_AND_CHAIN_ID[darkMode ? 'dark' : 'light'][chainId]};
+  background: linear-gradient(360deg,#d8e3ff,#dce6ff 0,#fbfcff 51.48%,#f6f9ff);
   border-radius: 20px;
   display: flex;
   flex-direction: row;
@@ -97,7 +99,6 @@ const ContentWrapper = styled.div<{ chainId: NetworkAlertChains; darkMode: boole
   width: 100%;
 
   :before {
-    background-image: url(${({ logoUrl }) => logoUrl});
     background-repeat: no-repeat;
     background-size: 300px;
     content: '';
@@ -166,15 +167,15 @@ export function NetworkAlert() {
   return bridge ? (
     <RootWrapper>
       <ContentWrapper chainId={chainId} darkMode={darkMode} logoUrl={logoUrl}>
-        <LinkOutToBridge href={bridge}>
+        <LinkOutToBridge href="https://app.omchain.io/bridge">
           <BodyText color={textColor}>
-            <L2Icon src={logoUrl} />
+            <L2Icon src={OmChainLogo} />
             <AutoRow>
               <Header>
-                <Trans>{label} token bridge</Trans>
+                <Trans>Omchain token bridge</Trans>
               </Header>
               <HideSmall>
-                <Trans>Deposit tokens to the {label} network.</Trans>
+                <Trans>Deposit tokens to the Omchain network.</Trans>
               </HideSmall>
             </AutoRow>
           </BodyText>

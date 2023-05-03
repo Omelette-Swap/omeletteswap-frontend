@@ -205,7 +205,7 @@ export default function SettingsTab({ placeholderSlippage }: { placeholderSlippa
             <Text fontWeight={600} fontSize={14}>
               <Trans>Interface Settings</Trans>
             </Text>
-            {isSupportedChainId(chainId) && (
+            {/* {isSupportedChainId(chainId) && (
               <RowBetween>
                 <RowFixed>
                   <ThemedText.DeprecatedBlack fontWeight={400} fontSize={14} color={theme.textSecondary}>
@@ -225,7 +225,7 @@ export default function SettingsTab({ placeholderSlippage }: { placeholderSlippa
                   }}
                 />
               </RowBetween>
-            )}
+            )} */}
             <RowBetween>
               <RowFixed>
                 <ThemedText.DeprecatedBlack fontWeight={400} fontSize={14} color={theme.textSecondary}>

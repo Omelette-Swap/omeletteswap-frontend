@@ -246,23 +246,21 @@ export default function App() {
 
                   <Route path="pool/v2/find" element={<PoolFinder />} />
                   <Route path="pool/v2" element={<PoolV2 />} />
-                  <Route path="pool" element={<Pool />} />
+                  <Route path="pool" element={<PoolV2 />} />
                   <Route path="pool/:tokenId" element={<PositionPage />} />
 
                   <Route path="pools/v2/find" element={<PoolFinder />} />
                   <Route path="pools/v2" element={<PoolV2 />} />
-                  <Route path="pools" element={<Pool />} />
+                  <Route path="pools" element={<PoolV2 />} />
                   <Route path="pools/:tokenId" element={<PositionPage />} />
 
                   <Route path="add/v2" element={<RedirectDuplicateTokenIdsV2 />}>
                     <Route path=":currencyIdA" />
                     <Route path=":currencyIdA/:currencyIdB" />
                   </Route>
-                  <Route path="add" element={<RedirectDuplicateTokenIds />}>
-                    {/* this is workaround since react-router-dom v6 doesn't support optional parameters any more */}
+                  <Route path="add" element={<RedirectDuplicateTokenIdsV2 />}>
                     <Route path=":currencyIdA" />
                     <Route path=":currencyIdA/:currencyIdB" />
-                    <Route path=":currencyIdA/:currencyIdB/:feeAmount" />
                   </Route>
 
                   <Route path="increase" element={<AddLiquidity />}>
